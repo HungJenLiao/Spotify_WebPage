@@ -1,0 +1,259 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'main/style.css' %}" rel="stylesheet">
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'asset/Home_icon.png' %}" alt="" class="gray-filtered">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'asset/Search.svg' %}" alt="" class="gray-filtered">
+                            <span>Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'asset/YourLibrary_icon.png' %}" alt="" class="gray-filtered">
+                            <span>Your Library</span>
+                        </a>
+                    </li>
+                    <div style="height: 20px"></div>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'asset/CreatePlaylist.svg' %}" alt="" class="gray-filtered">
+                            <span>Create Playlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'asset/Like.svg' %}" alt="" class="gray-filtered">
+                            <span>Like Songs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr width="100%">
+            <div style="height: 10px;"></div>
+            <div class="menu playlists">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>Chill Vibes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Summer Hits</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Party Time</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Road Trip</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Rap Music</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Road Trip</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Jazz For Relaxation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Workout Playlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Jay Chou</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="current_song_cover">
+                <img src="{% static 'asset/CurrentSong_Cover.png' %}" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="playlist-header">
+                <div class="playlist-top">
+                    <div class="playlist-arrows">
+                        <div class="arrow-container">
+                            <img src="{% static 'asset/LeftArrow.svg' %}" alt="">
+                        </div>
+                        <div class="arrow-container">
+                            <img src="{% static 'asset/RightArrow.svg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="playlist-top-email">
+                        <div class="arrow-container">
+                            <img src="{% static 'asset/Profile.svg' %}" alt="">
+                        </div>
+                        <span>WWWWWWWWW...</span>
+                    </div>
+                </div>
+                <div class="playlist-content">
+                    <div class="playlist-cover">
+                        <img src="{% static 'asset/Playlist_pic.png' %}" alt="">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-public">PUBLIC PLAYLIST</div>
+                        <div class="playlist-title">
+                            Lounge Chill Out - Relaxing Loung Music
+                        </div>
+                        <div class="playlist-description">
+                            Lounge Chill Out - Relaxing Loung Music is The most calming house Music
+                            that will help you relax and unwind ☺️. Deep house, chill hits, and chill
+                            house music
+                        </div>
+                        <div class="playlist-status">
+                            <img src="{% static 'asset/Spotify-logo.png' %}">
+                            <span>86,836 likes .</span>
+                            <span>163 songs .</span>
+                            <span>7hr 44min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-songs-container">
+                <div class="playlist-buttons">
+                    <div class="playlist-buttons-left">
+                        <div class="playlist-buttons-pause">
+                            <img src="{% static 'asset/Pause.svg' %}">
+                        </div>
+                        <div class="playlist-buttons-like" class="spotify-color">
+                            <img src="{% static 'asset/FilledLike.svg' %}">
+                        </div>
+                        <div class="playlist-buttons-download">
+                            <img src="{% static 'asset/Download.svg' %}">
+                        </div>
+                        <div class="playlist-buttons-three-dots">
+                            <img src="{% static 'asset/ThreeDots.svg' %}">
+                        </div>
+                    </div>
+                    <div class="playlist-buttons-right">
+                        <div class="playlist-buttons-search">
+                            <img src="{% static 'asset/Search.svg' %}">
+                        </div>
+                        <div class="playlist-button-order">
+                            Custom Order
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-songs">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>TITLE</th>
+                            <th>ALBUM</th>
+                            <th>DATE ADD</th>
+                            <th>
+                                <img src="{% static 'asset/Duration.svg' %}"  alt="">
+                            </th>
+                        </tr>
+                        <tr style="height: 20px"></tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="{% static 'asset/CurrentSong_Cover.png' %}">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">Complicated</div>
+                                    <div class="song-artist">Avril Lavigne</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Let Go</td>
+                            <td class="song-date-added">March 29, 2021</td>
+                            <td class="song-duration">4:05</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="{% static 'asset/CurrentSong_Cover.png' %}">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">Complicated</div>
+                                    <div class="song-artist">Avril Lavigne</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Let Go</td>
+                            <td class="song-date-added">March 29, 2021</td>
+                            <td class="song-duration">4:05</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer-player">
+            <div class="footer-player-left">
+                <div class="footer-player-left-song">
+                    <div class="footer-player-left-song-name">Complicated</div>
+                    <div class="footer-player-left-song-artist">Avril Lavigne</div>
+                </div>
+                <div class="footer-player-left-like">
+                    <img src="{% static 'asset/FilledLike.svg' %}" alt="">
+                </div>
+            </div>
+            <div class="footer-player-middle">
+                <div class="footer-player-middle-buttons">
+                    <img src="{% static 'asset/shuffle.svg' %}" alt="" class="gray-filtered">
+                    <img src="{% static 'asset/Previous.svg' %}" alt="" class="gray-filtered">
+                    <div class="pause-button">
+                        <img src="{% static 'asset/Pause.svg' %}" alt="">
+                    </div>
+                    <img src="{% static 'asset/Next.svg' %}" alt="" class="gray-filtered">
+                    <img src="{% static 'asset/Repeat.svg' %}" alt="" class="gray-filtered">
+                </div>
+                <div class="footer-player-middle-slider">
+                    <div class="player-time">0:30</div>
+                    <div class="player-slider">
+                        <input type="range" min="1" max="100" value="20">
+                    </div>
+                    <div class="player-time">4:05</div>
+                </div>
+            </div>
+            <div class="footer-player-right">
+                <div class="footer-player-right-buttons">
+                    <img src="{% static 'asset/Lyrics.svg' %}" alt="">
+                    <img src="{% static 'asset/Queue.svg' %}" alt="">
+                    <img src="{% static 'asset/Connect to a device.svg' %}" alt="">
+                    <img src="{% static 'asset/Volume.svg' %}" alt="">
+                    <div class="player-slider">
+                        <input type="range" min="1" max="100" value="30" width="">
+                    </div>
+                    <img src="{% static 'asset/Full Screen.svg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
